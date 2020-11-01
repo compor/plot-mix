@@ -1,0 +1,37 @@
+# matplotlib rc config
+
+figure.figsize:     10, 7  # figure width, height in inches
+figure.dpi:         100
+
+#figure.autolayout : True
+#figure.constrained_layout.use: True
+
+text.usetex:        True
+font.family:        serif
+font.serif:         Palatino
+font.size:          48.0
+
+#axes.grid.axis:     x
+axes.grid:          True
+grid.color:         black
+grid.linewidth:     .5
+grid.linestyle:     solid
+grid.alpha:         .2
+
+xtick.direction:    in
+xtick.top:          False
+xtick.bottom:       False
+ytick.direction:    in
+ytick.right:        True
+
+legend.frameon:       True
+legend.loc:           upper center
+legend.shadow:        False
+legend.fancybox:      True
+legend.framealpha:    1.0
+legend.borderaxespad: 0
+legend.edgecolor:     gray
+legend.handlelength:  1.0
+legend.labelspacing:  0.8
+legend.columnspacing: 0.8
+
