@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+mkdir -p out
+
 ./graph.py \
   -c ./config.json \
-  -f ./data.csv
+  -f ./data.csv \
+  -d out
