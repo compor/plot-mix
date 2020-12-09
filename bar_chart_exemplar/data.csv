@@ -1,4 +1,4 @@
-procs,speedup
+warps,speedup
 1,0.5
 2,0.76
 3,0.8
