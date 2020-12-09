@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-chmod a+x ./graph.py
+mkdir -p out
 
-./graph.py -f data.csv
-
-cp data.pdf ../../figures/prog_opt/rank_corr_plot_prog_opt.pdf
+./graph.py \
+  -f data.csv \
+  -d out

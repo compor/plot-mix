@@ -47,8 +47,8 @@ def create_plot(csvfile, config):
 
     i = 0
     for d, c, g in zip(data, color, group):
-        x = d['MRank']
-        y = d['ERank']
+        x = d['Measured']
+        y = d['Expected']
         s = 1500
         axis.scatter(x, y, alpha=0.4, c=c, edgecolors='k', s=s, label=g)
 
@@ -83,6 +83,11 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Generate speedup bar chart.')
     parser.add_argument('-f', '--file', required=True, type=str)
     # parser.add_argument('-c', '--config', required=True, type=str)
+    parser.add_argument('-d',
+                        '--dest-dir',
+                        required=False,
+                        type=str,
+                        default='.')
     args = parser.parse_args()
 
     if not os.path.exists(args.file):
