@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-./graph_speedup.py \
+./graph.py \
   -c ./config.json \
   -f ./data.csv
